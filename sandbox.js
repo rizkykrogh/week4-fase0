@@ -396,5 +396,3 @@ if (aveJohn > aveMike && aveJohn > aveMary) {
     console.log('There is a draw');
 }
 */
-
-hg
