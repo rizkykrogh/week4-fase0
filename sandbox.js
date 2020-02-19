@@ -396,3 +396,193 @@ if (aveJohn > aveMike && aveJohn > aveMary) {
     console.log('There is a draw');
 }
 */
+
+// var ageJohn = calculateAge(1998);
+// var ageMike = calculateAge(1994);
+// var ageMark = calculateAge(1990);
+// console.log(ageJohn, ageMike, ageMark);
+/*
+function calculateAge(birthYear) {
+    return 2018 - birthYear;
+}
+function yearsUntilRetirement(year, firstName) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    if (retirement > 0) {
+        console.log(firstName + ' retires in ' 
+        + retirement + ' years.')
+    } else {
+        console.log(firstName + ' is already retired.')
+    }
+    
+}
+
+yearsUntilRetirement(1998, 'John')
+*/
+
+/*Logicnya array index pertama adalah angka yang paling 
+kecil, index kedua yang paling tua dan yang ketiga adalah
+selisih dari yang terkecil dan terbesar
+
+function differenceInAges(ages){
+    var arr = []
+    var angka = '' + ages
+    for(var i = 0; i < ages.length; i++){
+        arr.push(Number(angka[i]));
+    } if 
+    return arr;
+}
+console.log(differenceInAges([82, 15, 6, 38, 35])) // [6, 82, 76]
+console.log(differenceInAges([57, 99, 14, 32])) // [14, 99, 85]
+*/
+
+/*
+function calculateAge(birthYear) {
+    return 2018 - birthYear;
+}
+function yearsUntilRetirement(year, firstName) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    if (retirement > 0) {
+        console.log(firstName + ' retires in ' 
+        + retirement + ' years.')
+    } else {
+        console.log(firstName + ' is already retired.')
+    }
+    
+}
+
+yearsUntilRetirement(1998, 'John')
+*/
+/*
+function wahtDoYoDo(job, firstName){
+    switch(job) {
+        case 'teacher':
+            return firstName + ' teaches kids how to code.';
+        case 'driver':
+            return firstName + ' drives a cab in Lisbon.';
+        case 'designer':
+            return firstName + ' designs beautiful websites.';
+        default:
+            return firstName + ' does something else';
+    }
+}
+console.log(wahtDoYoDo('teacher', 'John'));
+console.log(wahtDoYoDo('driver', 'Mark'));
+console.log(wahtDoYoDo('designer', 'Jane'));
+console.log(wahtDoYoDo('retired', 'Mike'));
+*/
+
+// Initialize New Array
+// var names = ['John', 'Mark', 'Jane'];
+// var years = new Array(1990, 1969, 1948);
+// console.log(names[0]);
+// console.log(names.length);
+
+// // Mutate Array Data
+// names[1] = 'Ben';
+// names[names.length] = 'Mary';
+// console.log(names);
+
+/*
+// Different Data Type
+var john = ['John' , 'Smith', 1990, 'designer', false];
+
+john.push('blue')
+john.unshift('Mr.');
+console.log(john);
+
+john.pop()
+john.shift()
+console.log(john);
+
+console.log(john.indexOf('John'))
+console.log(john.indexOf('Smith'))
+console.log(john.indexOf(1990))
+console.log(john.indexOf('teacher'))
+console.log(john.indexOf(23))
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT designer ' :
+'John IS a designer'
+console.log(isDesigner);
+*/
+
+/*
+function tipsCalculator(bill) {
+    var percentage;
+    if (bill < 50) {
+        percentage = .2
+    } else if (bill >= 50 && bill < 200) {
+        percentage = .15
+    } else {
+        percentage = .1
+    }
+    return percentage * bill
+}
+var bills = [124, 48, 268];
+var tips = [tipsCalculator(bills[0]),
+            tipsCalculator(bills[1]),
+            tipsCalculator(bills[2])];
+console.log(tips);
+*/
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    familyMember: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+};
+console.log(john)
+
+
+/*
+function multiplyEverything(arr) { 
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] *= 2;
+    }
+    console.log(arr);
+}
+multiplyEverything([1, 2, 3, 4])// [2, 4, 6, 8]
+*/
+/*
+function differenceInAges(ages){
+    for(var i = 0; i < ages.length; i++) {
+        for(var j = 0; j < i; j++){
+            if(ages[i] < ages[j]){
+                var temp = ages[i]
+                ages[i] = ages[j]
+                ages[j] = temp
+            }
+        }
+    }
+    let min = ages[0]
+    let max = ages[ages.length - 1]
+    let selisih = max - min
+    return [min, max, selisih]
+}
+
+*/
+/*
+function differenceInAges(ages) {
+    while (ages[0] > [1]) {
+        for (var i = 0; i < ages.length; i++) {
+            if (i < ages.length - 1) {
+                if (ages[i] > ages[i + 1]) {
+                    console.log(ages[i], ages[i+1])
+                    var temp = ages[i]
+                    ages[i] = ages[i + 1]
+                    ages[i + 1] = temp
+                }
+            }
+        }
+    }
+
+    return [ages, '<<<'];
+}
+
+
+console.log(differenceInAges([82, 15, 6, 38, 35])) // [6, 82, 76]
+console.log(differenceInAges([57, 99, 14, 32])) // [14, 99, 85]
+*/
