@@ -3,7 +3,7 @@ function urutkanAbjad(str) {
     var kamus = 'abcdefghijklmnopqrstuvwxyz';
     var result = '';
     for(var i = 0; i < kamus.length; i++) {
-        for(var j = 0; str.length; j++) {
+        for(var j = 0; j < str.length; j++) {
             if(kamus[i] == str[j]) {
                 result += str[j];
             }
